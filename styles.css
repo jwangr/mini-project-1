@@ -1,0 +1,71 @@
+/* set all sizing to border-box to include padding and border in the total width and height of the elements */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+
+#header {
+    background-color: rgb(162, 62, 72);
+    padding: 0px 5px;
+}
+
+    .logo {
+        height: 80%;
+        width: auto;
+    }
+    .menu {
+        list-style: none;
+        height: 100%;
+    }
+    .menu > li {
+        padding: 20px;
+        height: 100%;
+        align-content: center;
+
+    }
+
+    .activepage {
+        background-color: rgb(255, 140, 66);
+    }
+#mainbody {
+    background-color: rgba(255, 241, 117, 0.283);
+    height: 500px;
+}
+
+#footer {
+    background-color: rgb(162, 62, 72);
+    height: 100px;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'menu'
+        'footer';
+    grid-template-rows: 80px 500px 50px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
