@@ -17,8 +17,8 @@
 
         <div class="menu">
             <ul class="menu">
-                <li>Home</li>
-                <li class="activepage">Menu</li>
+                <li class="activepage">Home</li>
+                <li><a href="/mini-project-1/menu.html">Menu</a></li>
                 <li>Contact</li>
                 <li>Cart 🛒</li>
             </ul>
@@ -26,179 +26,23 @@
     </div>
 
     <div id="mainbody" class="item2 ">
-        <div class="non-grid-item1">
-            <h1>Exclusive Pizza Range</h1>
-            <p>Baked fresh to order by nonna-trained artisans.</p>
+        <div class="index-body-image"></div>
+        <div class="index-body-content">
+            <h1>Welcome to The Pizza Place</h1>
+            <div class="flexrow">
+                <div>            
+                    <p>Craving bold flavours, bubbling cheese, and that perfect golden crust? Step into a pizza lover’s paradise! At The Pizza Place, we serve handcrafted pizzas made with love, layered with premium ingredients, and baked to perfection in our stone ovens.
+
+Whether you’re into the fiery kick of Peri Peri Chicken, the rich indulgence of Meat Deluxe, or the fresh zing of Mediterranean Lamb – we’ve got a slice for every craving. Vegetarian? Gluten-free? No worries – we’ve got something hot and cheesy just for you too.
+
+From the very first bite to the last melted-cheese pull, you’ll taste the passion in every pie. Dine in, grab it to go, or get it delivered piping hot to your doorstep.</p></div>
+
+                <div class="bigimage">
+                    <img src="Images/logo5.png">
+                </div>
+            </div>
+
         </div> 
-        <div class="promotioncontainer">
-                <div class="promotion-text">
-                    <h1>EOFY SALE</h1>
-                    <h3>Buy 5, get 1 free! </h3>
-                    <h3>GET YOUR HANDS ON OLD STOCK</h3>
-                </div>            
-            <div class="promotion non-grid-item1"></div>
-        </div>   
-   
-        <div class="grid-container2">
-            <div class="grid2-hot-item">
-                <h3>🔥 HOTTEST NEW PIZZA 🔥</h3>
-                <div class="card2">
-                    <img class="hotitem" src="Images/doughminator.png">
-                    <div class = "card2-description">
-                        <h4>The Doughminator</h4>
-                        <div>🍕No fuss</div>
-                        <div>🍕Loaded crust</div>
-                        <div>🍕Cheesy must</div>
-                        <button>🛒 Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="grid3">
-                <button class="search" onclick="view(document.querySelector('.grid3'))">🔍</button>
-                <div class="grid-image">
-                    <img src="Images/periperichicken.png">
-                </div>
-                <div class="grid-description">
-                    <div><h4>Peri Peri Chicken</h4></div>
-                    <div>$15.00</div>
-                    <button>🛒 Add to Cart</button>
-                </div>
-
-                <section id = "section3">
-                    <button class="search" onclick="close_view(document.querySelector('.grid3'))">✖</button>
-                    <p>Spicy, tangy, and zesty.</p>
-                    <p>Balanced by the creamy cheese and soft crust</p>
-                    <p>Perfect for those who love a kick of chili and vibrant flavors.</p>
-                </section>
-
-            </div>
-            <div class="grid4">
-                <div class="grid-image"><img src="Images/meatdeluxe.png"></div>
-                <div class="grid-description">
-                    <div><h4>Meat Deluxe</h4></div>
-                    <div>$15.00</div>
-                    <button>🛒 Add to Cart</button>
-                </div>            
-                
-                <button class="search" onclick="view(document.querySelector('.grid4'))">🔍</button>                
-
-                <section>
-                    <button class="search" onclick="close_view(document.querySelector('.grid4'))">✖</button>
-                    <p>Savory, smoky, and robust — the combination of different meats gives a deep, satisfying flavor.</p>
-                    <p>Rich and cheesy with a slightly tangy tomato sauce base.</p>
-                    <p>Filling and hearty, great for those who love a protein-packed meal.</p>
-                </section>                
-            </div>
-            <div class="grid5">
-                <div class="grid-image"><img src="Images/bbqchicken.png"></div>
-                <div class="grid-description">
-                    <div><h4>BBQ Chicken</h4></div>
-                    <div>$15.00</div>
-                    <button>🛒 Add to Cart</button>
-                </div> 
-                
-                <button class="search" onclick="view(document.querySelector('.grid5'))">🔍</button>                
-
-                <section>
-                    <button class="search" onclick="close_view(document.querySelector('.grid5'))">✖</button>
-                    <p>Sweet and smoky from the BBQ sauce.</p>
-                    <p>Savory and juicy from the chicken.</p>
-                    <p>Creamy and melty cheese balances the flavors perfectly.</p>
-                    <p>A satisfying combination of textures—crispy crust, tender meat, and gooey cheese.</p>
-                </section>                    
-            </div>
-            <div class="grid6">
-                <div class="grid-image"><img src="Images/pepperoni.png"></div>
-                <div class="grid-description">
-                    <div><h4>Pepperoni</h4></div>
-                    <div>$15.00</div>
-                    <button>🛒 Add to Cart</button>
-                </div>            
-
-                <button class="search" onclick="view(document.querySelector('.grid6'))">🔍</button>                
-
-                <section>
-                    <button class="search" onclick="close_view(document.querySelector('.grid6'))">✖</button>
-                    <p>Savory and slightly spicy from the pepperoni.</p>
-                    <p>The pepperoni’s bold, smoky flavor contrasts beautifully with the mellow cheese.</p>
-                    <p>Creamy and melty cheese balances the flavors perfectly.</p>
-                    <p>Creamy and mild from the melted cheese.</p>
-                </section>                     
-            </div>
-            <div class="grid7">
-                <div class="grid-image"><img src="Images/meditteraneanlamb.png"></div>
-                <div class="grid-description">
-                    <div><h4>Mediterranean Lamb</h4></div>
-                    <div>$15.00</div>
-                    <button>🛒 Add to Cart</button>
-                </div>            
-
-                <button class="search" onclick="view(document.querySelector('.grid7'))">🔍</button>                
-
-                <section>
-                    <button class="search" onclick="close_view(document.querySelector('.grid7'))">✖</button>
-                    <p>Tender lamb pieces often marinated or spiced with Mediterranean herbs. </p>
-                    <p>Vibrant, hearty pizza with a fresh Mediterranean flair.</p>
-                    <p> Earthy and aromatic lamb combined with salty olives and tangy feta.</p>
-                </section>   
-
-            </div>
-            <div class="grid8">
-                <div class="grid-image"><img src="Images/garlicprawn.png"></div>
-                <div class="grid-description">
-                    <div><h4>Garlic Prawn</h4></div>
-                    <div>$15.00</div>
-                    <button>🛒 Add to Cart</button>
-                </div>            
-
-                <button class="search" onclick="view(document.querySelector('.grid8'))">🔍</button>                
-
-                <section>
-                    <button class="search" onclick="close_view(document.querySelector('.grid8'))">✖</button>
-                    <p>Seafood-inspired pizza that’s light yet packed with flavor, perfect for garlic lovers.</p>
-                    <p>The garlicky prawns bring a buttery sweetness and slight spice balanced by fresh herbs and creamy cheese—fresh, flavorful, and satisfying.</p>
-                </section>                   
-            </div>
-            <div class="grid9">
-                <div class="grid-image"><img src="Images/hawaiian.png"></div>
-                <div class="grid-description">
-                    <div><h4>Hawaiian</h4></div>
-                    <div>$15.00</div>
-                    <button>🛒 Add to Cart</button>
-                </div>            
-
-                <button class="search" onclick="view(document.querySelector('.grid9'))">🔍</button>                
-
-                <section>
-                    <button class="search" onclick="close_view(document.querySelector('.grid9'))">✖</button>
-                    <p>The juicy sweetness of pineapple contrasts delightfully with the smoky, salty ham, balanced by gooey cheese and a crisp crust—making it a polarizing but beloved favorite.</p>
-                </section>                   
-            </div>
-        </div>
-    </div>
-    <div id="footer" class="item3">
-        <h2>© jwangr</h2>
-        <div>Contact us on: Facebook | Instagram </div>
-    </div>    
-
-    <script>
-        function view(item) {
-            // show description
-            const description = item.querySelector('section');
-            description.style.display = "block";
-            // hide details
-            const text = item.querySelector('.grid-description');
-            text.style.display="none";
-        }
-
-        function close_view(item) {
-            // show description
-            const description = item.querySelector('section');
-            description.style.display = "none";
-            // hide details
-            const text = item.querySelector('.grid-description');
-            text.style.display="block";
-        }        
-    </script>
+        
     </body>
 </html>
