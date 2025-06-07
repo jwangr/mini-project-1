@@ -61,19 +61,25 @@ body {
 
 .grid-container2 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     grid-gap: 10px;
 }
     .grid-container2 >div {
-        background-color: rgb(108, 142, 173);
+        background-color: rgba(255, 140, 66);
         padding: 2px 10px;
+        /* text properties */
         text-align: center;
+        font-size: 18px;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         /* aspect-ratio: 1 / 1; */
+        border: 1px solid rgb(255, 60, 56);
+        border-radius: 1em;
+        box-shadow: 2px 2px 1px rgb(84, 33, 38);
     }
     .grid1 {
         grid-column: 1 / 4;
@@ -83,14 +89,65 @@ body {
         grid-column: 1 / 3;
         grid-row: 2 / span 2;
     }
+        .grid2-hot-item > h3 {
+            font-size:x-large
+        }
         .hotitem {
-            height: 350px;
+            width: 50%;
+            height: auto;
+            border-radius: 2em;
         }
 
-flexcolumn {
+        .card2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px;
+            width: 100%;
+            /* background-color: black; */
+        }
+            .card2-description {
+                text-align: right;
+                padding: 20px;
+                margin: 20px;
+                font-size: 25px;
+            }
+
+    .grid-image {
+        background-color: black;
+        width: 100%;
+        aspect-ratio: 2;
+    }
+    .grid-description {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+button {
+    background-color: rgb(162, 62, 72);
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    border-radius: 0.5em;
+    font-style: oblique;
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    /* border: 2px solid rgb(255, 60, 56); */
+    box-shadow: 2px 2px 1px rgb(81, 77, 37);
+}
+    /* functional classes */
+.flexcolumn {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 100%;
 }
 .flexrow {
     display: flex;
