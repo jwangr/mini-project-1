@@ -8,6 +8,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 #header {
@@ -15,6 +16,7 @@ body {
     color: white;
     height: fit-content;
     padding: 0px 10px;
+    box-shadow: 1px 3px 3px rgb(92, 0, 0);
 
     position: sticky;
     top: 0;
@@ -72,6 +74,9 @@ body {
         /* border decoration */
         border-radius: 1em;
         box-shadow: 2px 2px 1px rgb(244, 114, 33);
+
+        /* set up position for search */
+        position: relative;
     }
 
      .grid-container2 >div:hover {
@@ -83,6 +88,11 @@ body {
     
     .non-grid-item1 {
         text-align: center;
+        padding: 20px;
+    }
+
+    section {
+        display: none;
         padding: 20px;
     }
     .promotioncontainer {
@@ -181,6 +191,14 @@ button:hover {
     /* border: 2px solid rgb(255, 60, 56); */
     box-shadow: 2px 2px 1px rgb(81, 77, 37);
 }
+    
+    .search {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color:rgb(255, 138, 66)
+    }
+
 
 #footer {
     background-color: rgb(162, 62, 72);
