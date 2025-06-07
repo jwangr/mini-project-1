@@ -5,6 +5,11 @@
     font-style: normal;
 }
 
+h1, h2, h3 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
@@ -204,6 +209,7 @@ button:hover {
     background-color: rgb(162, 62, 72);
     text-align: right;
     padding: 20px;
+    color: white;
 }
 
     /* functional classes */
@@ -236,7 +242,9 @@ button:hover {
         position: static;
         height: fit-content;
         align-items: center;
-        width: 100%;
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .logo > img {
@@ -249,6 +257,9 @@ button:hover {
         flex-direction: column;
         width: 100vw;
         margin-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
     }
 
     .grid-container2 {
