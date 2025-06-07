@@ -8,9 +8,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
 }
-    .logo > img {
-        height: 20px;
-        width: auto;
+    .logo {
+        height: 100%;
+    }
+    img {
+        height: 80px;
     }
     .menu {
         list-style: none;
@@ -22,14 +24,13 @@ body {
         align-content: center;
 
     }
-
+    .menu > li:hover {
+        background-color: rgba(255, 138, 66, 0.346);
+    }
     .activepage {
         background-color: rgb(255, 140, 66);
     }
 
-#footer {
-    background-color: rgb(162, 62, 72);
-}
 
 .grid-container1 {
     display: grid;
@@ -39,7 +40,6 @@ body {
         'footer';
     height: 100vh;
     grid-template-rows: 1fr 4.5fr 0.5fr;
-    overflow-y: hidden;
 }
     .item1 {
         grid-area: header;
@@ -48,7 +48,7 @@ body {
     }
 
     .item2 {
-        grid-area: mainbody;
+        grid-area: main;
         background-color: rgba(255, 241, 117, 0.283);
         height: 100%;
         overflow-y: scroll;
@@ -56,7 +56,7 @@ body {
 
     .item3 {
         grid-area: footer;
-        height: 100%;
+        background-color: rgb(162, 62, 72);
     }
 
 .grid-container2 {
@@ -67,11 +67,13 @@ body {
 }
     .grid-container2 >div {
         background-color: rgb(108, 142, 173);
-        padding: 10px;
+        padding: 2px 10px;
         text-align: center;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        /* aspect-ratio: 1 / 1; */
     }
     .grid1 {
         grid-column: 1 / 4;
@@ -81,6 +83,15 @@ body {
         grid-column: 1 / 3;
         grid-row: 2 / span 2;
     }
+        .hotitem {
+            height: 350px;
+        }
+
+flexcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .flexrow {
     display: flex;
     flex-direction: row;
@@ -101,6 +112,7 @@ body {
     .grid-container1 {
         height: 100vh;
         grid-template-rows:max-content;
+        overflow:scroll;
     }
 
     #header {
